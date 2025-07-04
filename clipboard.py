@@ -49,6 +49,8 @@ class ClipboardWindow(Gtk.ApplicationWindow):
             print(f"Clipboard changed to: {text}")
             self.last_item = text
             self.clipboard_items.append(text)
+
+            # Creating and adding the widget to the list_box
             box = Gtk.Box(spacing=6, homogeneous=True)
             self.list_box.append(box)
             entry = Gtk.Entry()
