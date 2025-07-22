@@ -53,11 +53,11 @@ class ClipboardWindow(Gtk.ApplicationWindow):
             # Creating and adding the widget to the list_box
             box = Gtk.Box(spacing=6, homogeneous=True)
             self.list_box.append(box)
-            entry = Gtk.Entry()
-            entry.set_text(text)
-            box.append(entry)
-            button_copy_text = Gtk.Button(label='Copy Text')
-            button_copy_text.connect('clicked', lambda copy: self.clipboard.set(entry.get_text()))
+            # entry = Gtk.Entry()
+            # entry.set_text(text)
+            # box.append(entry)
+            button_copy_text = Gtk.Button(label=text)
+            button_copy_text.connect('clicked', lambda copy: self.clipboard.set(button_copy_text.get_label()))
             box.append(button_copy_text)
             
 def on_activate(app):
