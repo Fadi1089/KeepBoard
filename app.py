@@ -3,11 +3,12 @@ import gi
 gi.require_version('Gdk', '4.0')
 gi.require_version('Gtk', '4.0')
 from gi.repository import Gtk
-import clipboard
+from clipboard import ClipboardWindow
 
 # Create a new application
 app = Gtk.Application(application_id='linux.Clipboard')
-app.connect('activate', lambda app: clipboard.ClipboardWindow(app))
+app.connect('activate', lambda app: ClipboardWindow(app))
 
 # Run the application
-app.run(None)
+if __name__ == '__main__':
+    app.run(None)
