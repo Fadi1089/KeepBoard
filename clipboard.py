@@ -7,7 +7,7 @@ from gi.repository import Gtk, Gdk, GLib
 
 class ClipboardWindow(Gtk.ApplicationWindow):
     def __init__(self, app):
-        super().__init__(application=app, title='Clipboard') # title of the window
+        super().__init__(application=app, title='KeepBoard') # title of the window
         self.set_default_size(800, 400)
         self.clipboard_items = []  # List to self.store clipboard history
 
