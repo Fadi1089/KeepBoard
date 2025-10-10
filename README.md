@@ -2,7 +2,7 @@
 
 A modern clipboard history manager for Linux built with GTK4 and Python. KeepBoard automatically tracks your clipboard history and provides an intuitive interface to access previously copied text.
 
-## Features ✨
+## Features 
 
 - **Automatic Clipboard Monitoring**: Tracks clipboard changes in real-time
 - **Click-to-Copy**: Click any item in the history to copy it back to clipboard
@@ -12,9 +12,9 @@ A modern clipboard history manager for Linux built with GTK4 and Python. KeepBoa
 - **Error Handling**: Graceful error handling for clipboard operations
 - **No Duplicates**: Automatically prevents duplicate entries in history
 
-## Screenshots 📸
+## Screenshots 
 
-![KeepBoard Interface](screenshot.png)
+![KeepBoard Interface](preview.png)
 
 ## Requirements 📋
 
@@ -22,7 +22,7 @@ A modern clipboard history manager for Linux built with GTK4 and Python. KeepBoa
 - GTK4 development libraries
 - PyGObject (python3-gi)
 
-## Installation 🚀
+## Installation 
 
 ### Ubuntu/Debian
 ```bash
